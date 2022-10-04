@@ -5,48 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css%22%3E">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>CursoNex - Login</title>
+    <script>
+
+        $(function(){
+            $(".toggle").on("click", function(){
+
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                }
+                else{
+                    $(".item").addClass("active");
+                }
+            })
+        })
+
+    </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">CursoNex</a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="navtext collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-                </ul>
-            </div>
-            <div class="navlog collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-          </div>
+    <div class="container">
 
-          <div class="dropdown teste">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              menus
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Home</a></li>
-              <li><a class="dropdown-item" href="#">Cadastro</a></li>
-              <li><a class="dropdown-item active" href="#">Login</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <nav>
+             <ul class="menu">
+                 <li class="logo"><a href="#"><img class="logo" src="images/Group.svg" alt=""></a></li>
+                 <li class="item"><a href="#">Início</a></li>
+                 <li class="item"><a href="#">Nossos Cursos</a></li>
+                 <li class="item"><a href="#">Cursos da Comunidade</a></li>
+                 <li class="item button"><a href="#">Login</a></li>
+                 <li class="item button secondary"><a href="#">Cadastro</a></li>
+                 <li  class="toggle"><span class="bars"></span></li>
+             </ul>
+        </nav>
 
     <div class="cursim">
         <div class="cadastro">
